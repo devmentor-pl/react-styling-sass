@@ -1,0 +1,19 @@
+// ./src/scss/fonts.
+$font-name: 'roboto';
+$font-path: './../fonts';
+$font-list: 
+    (name: 'roboto', weight: normal, style: normal), 
+    (name: 'roboto-b', weight: bold, style: normal), 
+    (name: 'roboto-i', weight: normal, style: italic);
+
+@each $font in $font-list {
+    $name: map-get($font, name);
+    $path: '#{$font-path}/#{$name}';
+    @font-face {
+        font-family: $font-name;
+        src: url('#{$path}.woff2') format('woff2'),
+             url('#{$path}.woff') format('woff');
+        font-weight: map-get($font, weight);;
+        font-style: map-get($font, style);
+    }    
+}

@@ -1,0 +1,16 @@
+/* ./src/scss/Row.scss */
+.Row {
+    --color-alfa: #6cb2d1;
+    background-color: #fce2c2;
+    border: 2px solid var(--color-alfa);
+    color: var(--color-alfa);
+    padding: 20px;
+
+    &--dark {
+        background-color: #c5aeb4;
+    }
+
+    &--space-medium {
+        padding: 100px;
+    }
+}
