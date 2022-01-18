@@ -12,6 +12,7 @@ module.exports = {
         filename: 'app.min.js',
         // definiuję nazwę pliku wyjściowego
     },
+    mode: 'development',
     // ...
     module: {
         rules: [
